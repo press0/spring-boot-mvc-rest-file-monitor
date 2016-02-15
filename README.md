@@ -18,7 +18,7 @@ java -jar target/bmw-0.1.0.jar
 - [x] Get how many students take more than one Class
 - [x] Simulate multiple clients with a CyclicBarrier integration test
 - [x] Monitor file for external updates and Reload
-- [x] unit tests that validate the code
+- [x] validate code with unit tests
 
 
 Get how many students are registered for a Class
