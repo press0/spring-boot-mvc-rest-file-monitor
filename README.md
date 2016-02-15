@@ -16,7 +16,7 @@ java -jar target/bmw-0.1.0.jar
 
 - [x] Get how many students are registered for a Class
 - [x] Get how many students take more than one Class
-- [x] Simulate multiple clients with a CyclicBarrer integration test
+- [x] Simulate multiple clients with a CyclicBarrier integration test
 - [x] Monitor file for external updates and Reload
 - [x] unit tests that validate the code
 
@@ -31,7 +31,7 @@ Get how many students take more than one Class
 $ curl http://localhost:9000/register/studentsTakingMoreThanOneCourse ; echo
 1
 ```
-Simulate multiple clients with a CyclicBarrer integration test
+Simulate multiple clients with a CyclicBarrier integration test
 ```
 mvn -Dtest=CyclicBarrierIntegrationTest test
 ```
