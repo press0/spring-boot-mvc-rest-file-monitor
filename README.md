@@ -1,3 +1,11 @@
+**Summary**
+
+- [x] build and run unit tests
+- [x] run
+- [x] Get how many students are registered for a Class
+- [x] Get how many students take more than one Class
+- [x] Simulate multiple clients with a CyclicBarrier integration test
+- [x] Monitor file for external updates and reload file
 
 
 **build and run unit tests**
@@ -11,14 +19,6 @@ mvn clean package
 java -jar target/bmw-0.1.0.jar
 ```
 ![boot-startupt] (/images/boot-startup.png)
-
-**Requirements**
-
-- [x] Get how many students are registered for a Class
-- [x] Get how many students take more than one Class
-- [x] Simulate multiple clients with a CyclicBarrier integration test
-- [x] Monitor file for external updates and Reload
-- [x] validate code with unit tests
 
 
 Get how many students are registered for a Class
