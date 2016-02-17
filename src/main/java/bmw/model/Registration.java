@@ -1,12 +1,10 @@
 package bmw.model;
 
-import bmw.model.Claass;
-
 public class Registration {
 
-    Claass claass;
-    String professor;
-    int studentId;
+    private Claass claass;
+    private String professor;
+    private int studentId;
 
     public Registration() {}
 

@@ -21,10 +21,10 @@ import bmw.util.CaseConverter;
 @Controller
 @RequestMapping(value = "/register")
 public class MVCRestController {
-    private final Logger logger = LoggerFactory.getLogger(getClass());
-    private AtomicInteger i = new AtomicInteger(0);
+    final private Logger logger = LoggerFactory.getLogger(getClass());
+    final private AtomicInteger i = new AtomicInteger(0);
 
-    RegistrationService registrationService;
+    final private RegistrationService registrationService;
 
     @Autowired
     public MVCRestController(RegistrationService registrationService) {
@@ -50,10 +50,11 @@ public class MVCRestController {
         return registrationService.fetchAll();
     }
 
+    //todo: return status code
     @RequestMapping("/reload")
-    public String reload() {
+    public void reload() {
         registrationService.reload();
-        return "reloading csv file";
+        return;
     }
 
     @InitBinder

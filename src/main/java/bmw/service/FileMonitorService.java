@@ -17,12 +17,12 @@ import org.springframework.stereotype.Service;
 public class FileMonitorService {
     private final Logger logger = LoggerFactory.getLogger(getClass());
 
-    private String monitorFile;
-    private String monitorDirectory;
+    final private String monitorFile;
+    final private String monitorDirectory;
 
-    private static final long pollingInterval = 2 * 1000;
+    final private static long pollingInterval = 2 * 1000;
 
-    FileReaderService fileReaderService;
+    final private FileReaderService fileReaderService;
 
     @Autowired
     public FileMonitorService(FileReaderService fileReaderService,
@@ -34,7 +34,7 @@ public class FileMonitorService {
         monitor();
     }
 
-    public void monitor() {
+    private void monitor() {
         String currentPath;
         try {
             currentPath = (new File(".")).getCanonicalPath();

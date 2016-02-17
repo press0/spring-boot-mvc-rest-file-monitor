@@ -9,8 +9,6 @@ import java.util.concurrent.Executors;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.IntegrationTest;
 import org.springframework.boot.test.SpringApplicationConfiguration;
@@ -31,7 +29,7 @@ import bmw.model.Registration;
 @DirtiesContext
 public class CyclicBarrierIntegrationTest {
 
-    private final Logger logger = LoggerFactory.getLogger(getClass());
+    //private final Logger logger = LoggerFactory.getLogger(getClass());
 
     @Value("${local.server.port}")
     private int port;

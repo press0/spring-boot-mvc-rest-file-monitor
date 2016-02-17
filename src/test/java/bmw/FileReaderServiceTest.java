@@ -18,7 +18,7 @@ public class FileReaderServiceTest {
     @Value("${file}")
     private String file;
 
-    FileReaderServiceImpl registrationDao;
+    private FileReaderServiceImpl registrationDao;
 
     @Before
     public void before() {

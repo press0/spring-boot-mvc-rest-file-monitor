@@ -13,7 +13,7 @@ import bmw.model.Registration;
 @Service
 public class RegistrationServiceImpl implements RegistrationService {
 
-    FileReaderService fileReaderService;
+    final private FileReaderService fileReaderService;
 
     @Autowired
     public RegistrationServiceImpl(FileReaderService fileReaderService) {

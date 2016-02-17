@@ -1,7 +1,6 @@
 package bmw.service;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -21,11 +20,11 @@ import bmw.model.Registration;
 @Repository
 public class FileReaderServiceImpl implements FileReaderService {
 
-    private final Logger logger = LoggerFactory.getLogger(getClass());
+    final private Logger logger = LoggerFactory.getLogger(getClass());
 
     private CopyOnWriteArrayList<Registration> list = new CopyOnWriteArrayList<>();
 
-    private String file;
+    final private String file;
 
     @Autowired
     public FileReaderServiceImpl(@Value("${file}")String file) {
@@ -79,8 +78,6 @@ public class FileReaderServiceImpl implements FileReaderService {
                 list.add(registration);
             }
 
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         } finally {

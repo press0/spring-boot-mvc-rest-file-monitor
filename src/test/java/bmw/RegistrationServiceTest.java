@@ -43,7 +43,7 @@ public class RegistrationServiceTest {
         assertTrue(1 == registrationService.studentsTakingMoreThanOneCourse());
     }
 
-    @Test
+    @Test //todo:  currently tested by checking the log
     public void testReload() throws Exception {
 
     }
