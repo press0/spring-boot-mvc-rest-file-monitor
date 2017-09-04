@@ -22,7 +22,7 @@ mvn clean package
 ```
 java -jar target/bmw-0.1.0.jar
 ```
-![boot-startupt] (/images/boot-startup.png)
+![boot-startupt](images/boot-startup.png?raw=true)
 
 
 Get how many students are registered for a Class
@@ -39,14 +39,14 @@ Simulate multiple clients with a CyclicBarrier integration test
 ```
 mvn -Dtest=CyclicBarrierIntegrationTest test
 ```
-![integration-test] (/images/integration-test.png)
+![integration-test](images/integration-test.png?raw=true)
 
 Monitor file for external updates and Reload
 ```
 touch target/classes/file.csv 
 ```
 
-![integration-test] (/images/file-monitor.png)
+![integration-test](images/file-monitor.png?raw=true)
 
 
 
